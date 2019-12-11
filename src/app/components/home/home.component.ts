@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
 
-      this.http.get("https://simple-api.develobird.gr/home")
+      this.http.get("http://localhost:3000/homy")
         .subscribe(response => {
           this.home = response;
           console.log(response);

@@ -20,7 +20,7 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
 
-    this.http.get("https://simple-api.develobird.gr/contact")
+    this.http.get("http://localhost:3000/contact")
       .subscribe(response => {
         this.contact = response;
       });

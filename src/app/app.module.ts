@@ -16,6 +16,11 @@ import {AngularFontAwesomeModule} from 'angular-font-awesome';
 import { ProductComponent } from './components/product/product.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CarouselModule} from 'ngx-owl-carousel-o';
+import {FilterPipeModule} from 'ngx-filter-pipe';
+import {FormsModule} from '@angular/forms';
+import { BoxComponent } from './components/box/box.component';
+import { BoxesComponent } from './components/boxes/boxes.component';
+
 
 const routes= [
   {
@@ -38,6 +43,10 @@ const routes= [
     path:"contact",
     component:ContactComponent
   },
+  {
+    path:"boxes",
+    component:BoxesComponent
+  }
 
 
 ];
@@ -53,6 +62,9 @@ const routes= [
     ProductsComponent,
     ContactComponent,
     ProductComponent,
+    BoxComponent,
+    BoxesComponent,
+
 
   ],
   imports: [
@@ -65,7 +77,10 @@ const routes= [
     }),
     AngularFontAwesomeModule,
     BrowserAnimationsModule,
-    CarouselModule
+    CarouselModule,
+    FilterPipeModule,
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -14,7 +14,7 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {
 
-    this.http.get("https://simple-api.develobird.gr/about")
+    this.http.get("http://localhost:3000/about")
       .subscribe(response => {
         this.about = response;
         console.log(response);

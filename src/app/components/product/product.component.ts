@@ -19,7 +19,7 @@ export class ProductComponent implements OnInit {
   ngOnInit() {
     this.route.params.subscribe(params => {
 
-      this.http.get("https://simple-api.develobird.gr/products/" + params.productId)
+      this.http.get("http://localhost:3000/products/" + params.productId)
         .subscribe(response => {
           this.product = response;
           console.log(response)
